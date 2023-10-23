@@ -9,4 +9,11 @@
   return f[num] = factorialize(num - 1) * num;
 }
 
+
+function factorializeRecursion(num) {
+  return num === 1 ? 1 : num * (factorialize(num-1))
+}
+
 console.log(factorialize(5));
+
+console.log(factorializeRecursion(6));
